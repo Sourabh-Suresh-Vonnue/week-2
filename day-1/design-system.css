@@ -1,0 +1,25 @@
+:root {
+    --color-primary: blue;
+    --color-secondary: aqua;
+    --color-accent: rgb(86, 240, 99);
+    --color-success: green;
+    --color-warning: orange;
+    --color-error: red;
+    --color-text: gold;
+    --color-bg: violet;
+
+    /* tints and shades of primary color */
+    --clr-pri-tint1: #4d4dff;
+    --clr-pri-tint2: rgb(153, 153, 255);
+    --clr-pri-tint3: hsl(240, 100%, 35.1);
+    --clr-pri-tint4: oklch(0.2307, 0.1598, 264.05);
+    --clr-pri-tint5: color-mix(in srgb, var(--color-primary), black 90%);
+}
+
+[data-theme='dark'] {
+    --color-primary: rgb(69, 69, 252);
+    --color-secondary: rgb(0, 102, 102);
+    --color-accent: rgb(52, 131, 59);
+    --color-text: rgb(189, 161, 5);
+    --color-bg: rgb(173, 87, 173);
+}
