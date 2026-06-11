@@ -1,25 +1,54 @@
 :root {
-    --color-primary: blue;
-    --color-secondary: aqua;
-    --color-accent: rgb(86, 240, 99);
-    --color-success: green;
-    --color-warning: orange;
-    --color-error: red;
-    --color-text: gold;
-    --color-bg: violet;
+  --color-primary: blue;
+  --color-secondary: rgb(0, 162, 255);
+  --color-accent: rgb(55, 160, 63);
+  --color-success: green;
+  --color-warning: orange;
+  --color-error: red;
+  --color-text: gold;
+  --color-bg: rgb(247, 238, 247);
 
-    /* tints and shades of primary color */
-    --clr-pri-tint1: #4d4dff;
-    --clr-pri-tint2: rgb(153, 153, 255);
-    --clr-pri-tint3: hsl(240, 100%, 35.1);
-    --clr-pri-tint4: oklch(0.2307, 0.1598, 264.05);
-    --clr-pri-tint5: color-mix(in srgb, var(--color-primary), black 90%);
+  /* tints and shades of primary color */
+  --clr-pri-ts1: #4d4dff;
+  --clr-pri-ts2: rgb(153, 153, 255);
+  --clr-pri-ts3: hsl(240 100% 35.1);
+  --clr-pri-ts4: oklch(0.2307, 0.1598, 264.05);
+  --clr-pri-ts5: color-mix(in srgb, var(--color-primary), black 90%);
 }
 
-[data-theme='dark'] {
-    --color-primary: rgb(69, 69, 252);
-    --color-secondary: rgb(0, 102, 102);
-    --color-accent: rgb(52, 131, 59);
-    --color-text: rgb(189, 161, 5);
-    --color-bg: rgb(173, 87, 173);
+[data-theme="dark"] {
+  --color-primary: rgb(69, 69, 252);
+  --color-secondary: rgb(0, 102, 102);
+  --color-accent: rgb(52, 131, 59);
+  --color-text: rgb(189, 161, 5);
+  --color-bg: rgb(56, 40, 56);
+}
+
+body {
+  background-color: var(--color-bg);
+}
+a {
+  color: var(--color-accent);
+}
+h1 {
+  color: var(--color-primary);
+  padding: 20px;
+}
+h2 {
+  color: var(--color-secondary);
+}
+h3 {
+  color: var(--clr-pri-ts1);
+}
+#features p {
+  color: var(--clr-pri-ts2);
+}
+blockquote p {
+  color: var(--color-text);
+  background-color: var(--clr-pri-ts3);
+  padding: 10px;
+  border: 8px double var(--color-success);
+}
+footer {
+  color: var(--color-warning);
 }
