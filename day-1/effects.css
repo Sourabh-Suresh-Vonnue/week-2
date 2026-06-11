@@ -1,0 +1,97 @@
+div {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(160, 151, 133);
+    margin: 20px;
+}
+
+#bg-clr {
+    background-color: aqua;
+}
+#bg-img {
+    background-image: url(https://picsum.photos/300/300?random=1);
+}
+#bg-size-1 {
+    background-image: url(https://picsum.photos/200/100?random=2);
+    background-size: cover;
+}
+#bg-size-2 {
+    background-image: url(https://picsum.photos/200/100?random=2);
+    background-size: contain;
+}
+#bg-size-3 {
+    background-image: url(https://picsum.photos/200/100?random=2);
+    background-size: 150px 50px;
+}
+#bg-pos {
+    background-image: url(https://picsum.photos/300/300?random=3);
+    background-position: 100px 100px;
+}
+#bg-rpt {
+    background-image: url(https://picsum.photos/300/300?random=3);
+    background-position: 100px 100px;
+    background-repeat: no-repeat;
+}
+#bg-att {
+    background-image: url(https://picsum.photos/300/300?random=4);
+    background-attachment: fixed;
+}
+
+
+#lg-1 {
+    background-image: linear-gradient(red, aqua);
+}
+#lg-2 {
+    background-image: linear-gradient(to right, rgb(0, 128, 0), rgb(238, 130, 238), transparent, rgb(255, 255, 0));
+}
+#rg-1 {
+    background-image: radial-gradient(red, aqua);
+}
+#rg-2 {
+    background-image: radial-gradient(rgb(0, 128, 0), rgb(238, 130, 238), transparent, rgb(255, 255, 0));
+}
+
+
+#br-1 {
+    border-style: solid;
+    border-width: 7px;
+}
+#br-2 {
+    border-style: dashed;
+    border-width: 7px;
+}
+#br-3 {
+    border-style: dotted;
+    border-width: 7px;
+}
+#br-4 {
+    border-style: double;
+    border-width: 7px;
+}
+#br-5 {
+    border-radius: 50%;
+}
+#br-6 {
+    width: 500px;
+    height: 200px;
+    border-radius: 9999px;
+}
+#br-7 {
+    border-radius: 5px 40px 0px 100px;
+}
+
+
+#sh-1 {
+    box-shadow: 0px 4px 12px gold, 0px 8px 24px rgb(61, 8, 209);
+    border-radius: 5px;
+}
+#sh-2 {
+    box-shadow: 7px 12px;
+}
+#sh-3 {
+    box-shadow: inset 7px 12px rgb(192, 62, 192);
+}
+#sh-4 {
+    box-shadow: 0px 6px 12px gold, 0px 12px 24px rgb(61, 8, 209), 7px 1px rgb(255, 94, 0), 15px 1px rgb(49, 236, 2);
+    border-radius: 5px;
+}
