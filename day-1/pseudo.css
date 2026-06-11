@@ -1,0 +1,52 @@
+/* :hover applied the rule(s) when mouse pointer is on the element, whereas :focus-visible applies when user navigates using Tab. */
+a:hover {
+  color: green;
+}
+a:focus-visible {
+  background-color: rgb(243, 122, 52);
+}
+
+/* checkbox */
+input[type="checkbox"] {
+  appearance: none;
+  /* width: 20px;
+    height: 20px;
+    border: 1px solid; */
+}
+.checkmark::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
+input[type="checkbox"]:checked + .checkmark::before {
+  content: "\1F60A";
+}
+
+/* list counter */
+ol {
+  list-style-type: none;
+  counter-reset: item-count;
+}
+li {
+  counter-increment: item-count;
+}
+li::before {
+  content: "Item " counter(item-count) ": ";
+}
+
+/* tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border: 1px dotted;
+}
+
+.tooltip:hover:after {
+  position: absolute;
+  content: attr(data-tooltip);
+  top: -27px;
+  right: -100px;
+  background-color: aqua;
+}
