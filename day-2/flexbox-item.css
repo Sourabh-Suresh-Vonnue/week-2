@@ -1,0 +1,99 @@
+.container {
+  width: 700px;
+  height: 130px;
+  background-color: burlywood;
+  border: 1px solid black;
+  display: flex;
+}
+.container div {
+  width: 75px;
+  height: 75px;
+  background-color: crimson;
+  border: 1px solid black;
+}
+
+#flex-grow-item1 {
+  flex-grow: 0;
+}
+#flex-grow-item2 {
+  flex-grow: 1;
+}
+#flex-grow-item3 {
+  flex-grow: 2;
+}
+#flex-grow-item4 {
+  flex-grow: 1;
+}
+#flex-grow-item5 {
+  flex-grow: 0;
+}
+
+/* flex-shrink specifies how mush the flex item will shrink related to the rest of the flex items. 
+   Higher flex-shrink value means the item will shrink faster. 1 is default. 0 means don't shrink. */
+#flex-shrink-item1 {
+  flex-shrink: 0;
+  width: 200px;
+}
+#flex-shrink-item2 {
+  flex-shrink: 1;
+  width: 200px;
+}
+#flex-shrink-item3 {
+  flex-shrink: 12;
+  width: 200px;
+}
+#flex-shrink-item4 {
+  flex-shrink: 16;
+  width: 200px;
+}
+#flex-shrink-item5 {
+  flex-shrink: 3;
+  width: 200px;
+}
+
+/* flex-basis defines the initial size of flex item along it's main axis.
+   width defines the fixed horizontal size.  
+*/
+/* 0 -> sets initial size to 0 */
+#flex-basis-item1 {
+  flex-basis: 0;
+}
+/* auto -> sets initial size based explict width/height. if no explict width/height then sets based on content size */
+#flex-basis-item2 {
+  flex-basis: auto;
+}
+/* Lenth unit -> sets initial size to the specified length (will override explict width/height */
+#flex-basis-item3 {
+  flex-basis: 200px;
+}
+/* Percentage -> sets initial size to the percentage of size of parent flex container */
+#flex-basis-item4 {
+  flex-basis: 33.333%;
+}
+#flex-basis-item5 {
+  flex-basis: auto;
+  width: auto;
+}
+
+#order-item1 {
+  order: 5;
+}
+#order-item2 {
+  order: 1;
+}
+#order-item3 {
+  order: 3;
+}
+#order-item4 {
+  order: 2;
+}
+#order-item5 {
+  order: 4;
+}
+
+#align-self-container {
+  align-items: flex-end;
+}
+#align-self-item4 {
+  align-self: flex-start;
+}
