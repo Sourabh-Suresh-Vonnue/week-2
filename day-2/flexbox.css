@@ -1,0 +1,225 @@
+#js-flex-start {
+  width: 1000px;
+  height: 130px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  justify-content: flex-start;
+}
+
+div {
+  width: 75px;
+  height: 75px;
+  background-color: rgb(156, 93, 214);
+  border: 1px solid black;
+}
+
+#js-flex-end {
+  width: 1000px;
+  height: 130px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  justify-content: flex-end;
+}
+#js-center {
+  width: 1000px;
+  height: 130px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  justify-content: center;
+}
+#js-space-between {
+  width: 1000px;
+  height: 130px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+#js-space-around {
+  width: 1000px;
+  height: 130px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  justify-content: space-around;
+}
+#js-space-evenly {
+  width: 1000px;
+  height: 130px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  justify-content: space-evenly;
+}
+
+#ai-stretch {
+  width: 1000px;
+  height: 130px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  align-items: stretch;
+}
+#ai-stretch div {
+  height: auto;
+}
+#ai-flex-start {
+  width: 1000px;
+  height: 130px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  align-items: flex-start;
+}
+#ai-flex-end {
+  width: 1000px;
+  height: 130px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  align-items: flex-end;
+}
+#ai-center {
+  width: 1000px;
+  height: 130px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  align-items: center;
+}
+#ai-baseline {
+  width: 1000px;
+  height: 130px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  align-items: baseline;
+}
+#ai-baseline-i1 {
+  min-height: 50px;
+  font-size: large;
+}
+#ai-baseline-i2 {
+  min-height: 10px;
+  font-size: x-large;
+}
+#ai-baseline-i3 {
+  min-height: 100px;
+  font-size: medium;
+}
+#ai-baseline-i4 {
+  min-height: 34px;
+  font-size: xx-large;
+}
+#ai-baseline-i5 {
+  min-height: 78px;
+  font-size: xx-small;
+}
+#ai-baseline-i6 {
+  min-height: 4px;
+  font-size: x-small;
+}
+#ai-baseline-i7 {
+  min-height: 50px;
+}
+#ai-baseline-i8 {
+  min-height: 47px;
+  font-size: larger;
+}
+#ai-baseline-i9 {
+  min-height: 80px;
+}
+
+#ac-flex-start {
+  width: 1000px;
+  height: 200px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+#ac-flex-end {
+  width: 1000px;
+  height: 200px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+#ac-center {
+  width: 1000px;
+  height: 200px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  align-content: center;
+}
+#ac-space-between {
+  width: 1000px;
+  height: 200px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+#ac-space-around {
+  width: 1000px;
+  height: 200px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+#ac-stretch {
+  width: 1000px;
+  height: 200px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+#ac-stretch div {
+  height: auto;
+}
+
+#fd-row {
+  width: 1000px;
+  height: 130px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  flex-direction: row;
+}
+#fd-row-reverse {
+  width: 1000px;
+  height: 130px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  flex-direction: row-reverse;
+}
+#fd-column {
+  width: 130px;
+  height: 750px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  flex-direction: column;
+}
+#fd-column-reverse {
+  width: 130px;
+  height: 750px;
+  display: flex;
+  background-color: aquamarine;
+  border: 1px solid black;
+  flex-direction: column-reverse;
+}
