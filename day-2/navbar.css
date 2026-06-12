@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  height: 75px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  background-color: aqua;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+#shadow-header {
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  container-type: scroll-state;
+}
+
+#logo img {
+  width: 75.625px;
+  height: 35.5px;
+  margin-left: 10px;
+}
+nav {
+  flex: 1;
+}
+nav ul {
+  list-style-type: none;
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: rgb(172, 11, 11);
+  border: 1px solid green;
+  padding: 10px;
+}
+nav ul li a:focus-visible {
+  background-color: red;
+  border: 1px solid green;
+  padding: 10px;
+}
+#hamburger-menu {
+  display: none;
+}
+
+#login-signup {
+  margin-right: 10px;
+  font-size: 20px;
+  border-radius: 100px;
+  height: 40px;
+  width: 150px;
+  border: 1px solid black;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  #hamburger-menu {
+    display: block;
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+@container scroll-state(stuck: top) {
+  header {
+    box-shadow:
+      0 4px 12px rgb(108, 99, 226),
+      0 1px 3px rgba(18, 24, 109);
+  }
+}
+
+main {
+  margin: 8px;
+  padding: 2px;
+}
