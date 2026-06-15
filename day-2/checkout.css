@@ -1,0 +1,82 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(250, 239, 225);
+  padding: 5px;
+}
+form fieldset {
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+  gap: 10px;
+}
+.form-pair {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+.form-label-input {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+.form-label-input label {
+  width: 180px;
+}
+.form-label-input .input-error,
+.form-label-input select,
+.form-label-input textarea {
+  flex: 1;
+}
+.form-label-input .input-error {
+  display: flex;
+  flex-direction: column;
+}
+.form-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+input:focus {
+  box-shadow: inset 2px 2px 5px rgb(0, 0, 0, 0.3);
+}
+
+.err-msg {
+  display: none;
+}
+input:user-invalid {
+  border: 2px solid red;
+}
+input:user-invalid ~ .err-msg {
+  display: block;
+  color: red;
+}
+select:user-invalid {
+  border: 2px solid red;
+}
+select:user-invalid ~ .err-msg {
+  display: block;
+  color: red;
+}
+.form-btns button:hover {
+  box-shadow:
+    0 1px 4px blue,
+    0 3px 12px blueviolet;
+  padding: 5px;
+}
+
+@media (width < 600px) {
+  .form-label-input {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-pair {
+    margin-bottom: 20px;
+  }
+}

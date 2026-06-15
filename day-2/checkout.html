@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D2T6 - Checkout Style</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Checkout</h1>
+      <form>
+        <p>Fields marked * are required</p>
+
+        <fieldset>
+          <legend>Delivery Address</legend>
+          <div class="form-pair">
+            <div class="form-label-input">
+              <label for="fname">First Name *: </label>
+              <div class="input-error">
+                <input type="text" name="fname" id="fname" required />
+                <span class="err-msg">Please fill out this field</span>
+              </div>
+            </div>
+            <div class="form-label-input">
+              <label for="lname">Last Name *: </label>
+              <div class="input-error">
+                <input type="text" name="lname" id="lname" required />
+                <span class="err-msg">Please fill out this field</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-label-input">
+            <label for="addr1">Address Line 1 *: </label>
+            <div class="input-error">
+              <input type="text" name="addr1" id="addr1" required />
+              <span class="err-msg">Please fill out this field</span>
+            </div>
+          </div>
+          <div class="form-label-input">
+            <label for="addr2">Address 2: </label>
+            <div class="input-error">
+              <input type="text" name="addr2" id="addr2" />
+              <span class="err-msg">Please fill out this field</span>
+            </div>
+          </div>
+          <div class="form-label-input">
+            <label for="city">City *: </label>
+            <div class="input-error">
+              <input type="text" name="city" id="city" required />
+              <span class="err-msg">Please fill out this field</span>
+            </div>
+          </div>
+          <div class="form-label-input">
+            <label for="postcode">PostCode *: </label>
+            <div class="input-error">
+              <input type="text" name="postcode" id="postcode" required />
+              <span class="err-msg">Please fill out this field</span>
+            </div>
+          </div>
+          <div class="form-label-input">
+            <label for="country">Country *: </label>
+            <div class="input-error">
+              <select id="country" name="country" required>
+                <option value="" disabled selected>Select an Option</option>
+                <option value="Argentine">Argentine</option>
+                <option value="Australia">Australia</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+                <option value="European Union">European Union</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Italy">Italy</option>
+                <option value="Japan">Japan</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Russia">Russia</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Spain">Spain</option>
+                <option value="Turkey">Turkey</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+              </select>
+              <span class="err-msg">Please fill out this field</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Payment Details</legend>
+
+          <div class="form-label-input">
+            <label for="card-no">Card Number *: </label>
+            <div class="input-error">
+              <input type="number" name="card-no" id="card-no" required />
+              <span class="err-msg">Please fill out this field</span>
+            </div>
+          </div>
+          <div class="form-pair">
+            <div class="form-label-input">
+              <label for="expiry-month">Expiry Month*: </label>
+              <div class="input-error">
+                <select name="expiry-month" id="expiry-month" required>
+                  <option value="" disabled selected>Select an Option</option>
+                  <option value="January">January</option>
+                  <option value="February">February</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+                </select>
+                <span class="err-msg">Please fill out this field</span>
+              </div>
+            </div>
+            <div class="form-label-input">
+              <label for="expiry-year">Expiry Year*: </label>
+              <div class="input-error">
+                <input
+                  type="number"
+                  name="expiry-year"
+                  id="expiry-year"
+                  min="1900"
+                  max="2100"
+                  required
+                  placeholder="YYYY"
+                />
+                <span class="err-msg">Please fill out this field</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-label-input">
+            <label for="cvv">CVV *: </label>
+            <div class="input-error">
+              <input
+                type="password"
+                name="cvv"
+                id="cvv"
+                maxlength="4"
+                required
+                aria-describedby="cvv-desc"
+              />
+              <span id="cvv-desc">3 or 4 digits on the back of your card</span>
+              <span class="err-msg">Please fill out this field</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Order Notes</legend>
+          <div class="form-label-input">
+            <label for="order-notes">Order Notes (Optional): </label>
+            <textarea
+              name="order-notes"
+              id="order-notes"
+              maxlength="500"
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <div class="form-btns">
+          <button type="submit">Submit</button>
+          <button type="reset">Cancel</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
