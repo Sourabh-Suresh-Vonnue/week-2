@@ -1,0 +1,53 @@
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  gap: 0.6em;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.product {
+  background-color: aqua;
+}
+
+.container-auto-fill {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  gap: 0.6em;
+  background-color: antiquewhite;
+  text-align: center;
+}
+.container-auto-fit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 0.6em;
+  background-color: antiquewhite;
+  text-align: center;
+}
+.item {
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 0.6em;
+  background-color: antiquewhite;
+  text-align: center;
+}
+.container3 .item:last-child {
+  grid-column: auto / -1;
+}
+
+.container4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 0.6em;
+  background-color: antiquewhite;
+  text-align: center;
+}
+.container4 .featured {
+  grid-column: span 2;
+  grid-row: span 2;
+}
