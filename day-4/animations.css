@@ -1,0 +1,120 @@
+.spinner {
+  width: 100px;
+  height: 100px;
+  border: 20px solid rgb(185, 185, 185);
+  border-radius: 50%;
+
+  border-top: 20px solid blue;
+  animation: rotate 1s linear infinite;
+}
+
+.skeleton {
+  width: 400px;
+  height: 150px;
+  background-color: rgb(255, 206, 206);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skeleton .image,
+.skeleton .desc {
+  background-color: #e8e8e8;
+  background-image: linear-gradient(
+    100deg,
+    #e8e8e8,
+    #e8e8e8 50%,
+    rgb(255, 206, 206) 60%,
+    #e8e8e8 80%
+  );
+  background-size: 200% 100%;
+  animation: shimmer infinite 1s ease alternate;
+}
+.skeleton .image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.skeleton .desc {
+  width: 250px;
+  height: 100px;
+}
+
+.card {
+  width: 400px;
+  height: 150px;
+  background-color: aquamarine;
+  padding: 10px;
+  border: 1px solid black;
+
+  opacity: 0;
+  transform-origin: 0 0;
+  transform: translateY(20px);
+}
+.card.visible {
+  animation: card-entry 2s forwards;
+}
+
+.notification {
+  width: 300px;
+  height: 150px;
+  position: relative;
+  text-align: center;
+  background-color: rgb(196, 255, 250);
+  border: 1px solid black;
+  padding: 2px;
+}
+#bell {
+  font-size: 40px;
+  transform-origin: top center;
+}
+.notification:hover #bell {
+  animation: shake 0.7s linear infinite;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position-x: 200%;
+    }
+    100% {
+      background-position-x: 0%;
+    }
+  }
+
+  @keyframes card-entry {
+    from {
+      opacity: 0;
+      transform-origin: 0 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes shake {
+    0% {
+      transform: rotate(30deg);
+    }
+
+    50% {
+      transform: rotate(-30deg);
+    }
+
+    100% {
+      transform: rotate(30deg);
+    }
+  }
+}
