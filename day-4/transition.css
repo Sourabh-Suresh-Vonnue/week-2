@@ -1,0 +1,89 @@
+.transitions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+}
+.transitions-container div {
+  width: 200px;
+  height: 75px;
+  background-color: rgb(144, 144, 252);
+  transition-property: width;
+  transition-duration: 2s;
+}
+.transitions-container div:hover {
+  width: 600px;
+  background-color: rgb(255, 74, 74);
+}
+
+.ttf-linear {
+  transition-timing-function: linear;
+}
+.ttf-ease {
+  transition-timing-function: ease;
+}
+.ttf-ease-in {
+  transition-timing-function: ease-in;
+}
+.ttf-ease-out {
+  transition-timing-function: ease-out;
+}
+.ttf-ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.bouncy-btn {
+  width: 100px;
+  height: 50px;
+  margin-left: 100px;
+  transition: transform 0.5s cubic-bezier(0.3, 0.8, 0.3, 4);
+}
+.bouncy-btn:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  width: 200px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+  margin-left: 100px;
+}
+.card h3,
+.card p,
+.card button {
+  transform-origin: 0 0;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition-property: transform, opacity;
+  /* transition-duration: 1s; */
+  /* transition-timing-function: ease; */
+}
+.card:hover h3,
+.card:hover p,
+.card:hover button {
+  transform: translateX(0);
+  opacity: 1;
+}
+.card h3 {
+  transition-delay: 0ms;
+  transition-duration: 1s;
+}
+.card p {
+  transition-delay: 50ms;
+  transition-duration: 1.5s;
+}
+.card button {
+  transition-delay: 100ms;
+  transition-duration: 2s;
+}
+
+input {
+  outline: 1px solid;
+  transition: outline 0.1s ease-in-out;
+}
+input:focus {
+  outline: 4px solid rebeccapurple;
+}
