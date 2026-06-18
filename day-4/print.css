@@ -1,0 +1,34 @@
+@media print {
+  nav,
+  .sidebar,
+  button,
+  .ad {
+    display: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1;
+    transform: none !important;
+  }
+  .accordion .content,
+  .tab-component .content {
+    display: block !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  a::after {
+    content: " (" attr(href) ")";
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    break-after: avoid;
+  }
+}
