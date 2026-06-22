@@ -81,16 +81,9 @@ main {
 #hero {
   text-align: center;
   position: relative;
-}
-#hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url(https://picsum.photos/id/17/200/300);
-  background-image: linear-gradient(to right, blue, url(https://picsum.photos/id/17/200/300), blue);
-  background-size: 100% 100%;
-  opacity: 0.4;
-  z-index: -1;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 255, 0.192), rgba(0, 0, 255, 0.068)),
+    url(https://placeholdpicsum.dev/photo/id/616/200/300);
 }
 
 ul {
