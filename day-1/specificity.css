@@ -1,0 +1,28 @@
+/* (0, 0, 0, 1) */
+p {
+  color: red;
+  font-size: 10px;
+  background-color: aqua;
+}
+
+/* (0, 0, 1, 0) */
+.para {
+  color: green;
+  font-size: 20px;
+  background-color: brown;
+}
+
+/* (0, 1, 0, 0) */
+#first {
+  color: blue;
+  font-size: 30px;
+  background-color: blueviolet;
+}
+
+/* (1, 0, 0, 0, 0) */
+/* !impotant rules will be applied for color, font-size and backgroud-color rules */
+p {
+  color: crimson !important;
+  font-size: 60px !important;
+  background-color: cornflowerblue !important;
+}
