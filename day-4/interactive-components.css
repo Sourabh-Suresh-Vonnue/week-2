@@ -1,0 +1,65 @@
+/* accordion */
+.accordion {
+  width: 500px;
+  background-color: antiquewhite;
+  padding: 5px;
+}
+.accordion label {
+  width: 400px;
+  background-color: aqua;
+  padding: 5px;
+}
+.accordion input {
+  display: none;
+}
+.accordion .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+}
+.accordion input:checked ~ .content {
+  max-height: 100px;
+}
+
+/* tab component */
+.tab-component {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+  background-color: antiquewhite;
+  padding: 5px;
+}
+.tab-component label {
+  width: 400px;
+  background-color: aqua;
+  padding: 5px;
+}
+.tab-component input {
+  display: none;
+}
+.tab-component .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+}
+.tab-component input:checked + label + .content {
+  max-height: 100px;
+}
+
+.star-rating {
+  width: max-content;
+  padding: 5px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.star-rating input {
+  display: none;
+}
+.star-rating label::before {
+  content: "\2606";
+}
+.star-rating input:checked ~ label::before {
+  content: "\2B50";
+}
