@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.magazine-grid {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "hero hero hero hero"
+    "sidebar article1 article2 ad"
+    "footer footer footer footer";
+  grid-template-columns: 125px 1fr 1fr 125px;
+  grid-template-rows: 100px 100px 125px 1fr 75px;
+  gap: 0.6em;
+  padding: 5px;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+header,
+nav,
+.hero,
+.article1,
+.article2,
+aside,
+.ad,
+footer {
+  background-color: cornflowerblue;
+}
+
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero {
+  grid-area: hero;
+}
+.article1 {
+  grid-area: article1;
+}
+.article2 {
+  grid-area: article2;
+}
+aside {
+  grid-area: sidebar;
+}
+.ad {
+  grid-area: ad;
+}
+footer {
+  grid-area: footer;
+}
+
+@media (max-width: 900px) {
+  .magazine-grid {
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "hero hero"
+      "article1 article2"
+      "sidebar ad"
+      "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px 125px 1fr 100px 75px;
+  }
+}
+@media (max-width: 600px) {
+  .magazine-grid {
+    grid-template-areas:
+      "header"
+      "nav"
+      "hero"
+      "article1"
+      "article2"
+      "sidebar"
+      "ad"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 70px 100px 1fr 1fr 75px 75px 60px;
+  }
+}
