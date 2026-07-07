@@ -1,0 +1,45 @@
+h1 {
+  font-size: clamp(2.4rem, 5vw + 1rem, 5.6rem);
+}
+h2 {
+  font-size: clamp(2rem, 5vw + 1rem, 5rem);
+}
+h3 {
+  font-size: clamp(1.5rem, 5vw + 0.7rem, 4.5rem);
+}
+h4 {
+  font-size: clamp(1rem, 4vw + 0.7rem, 4rem);
+}
+h5 {
+  font-size: clamp(0.6rem, 4vw + 0.65rem, 3.2rem);
+}
+h6 {
+  font-size: clamp(0.3rem, 4vw + 0.6rem, 2.5rem);
+}
+
+.container {
+  width: clamp(10em, 30vw + 20em, 200em);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(0.3em, 1vw, 1rem);
+  padding: clamp(1rem, 3vw, 3rem);
+  background-color: antiquewhite;
+
+  container-name: card-grid;
+  container-type: inline-size;
+}
+.item {
+  background-color: aqua;
+  padding: clamp(1em, 1vw, 3em);
+  gap: clamp(0.3em, 1vw, 1rem);
+
+  display: flex;
+  flex-direction: column;
+}
+
+@container card-grid (min-width: 500px) {
+  .item {
+    flex-direction: row;
+    background-color: rgb(185, 142, 226);
+  }
+}
